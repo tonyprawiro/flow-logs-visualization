@@ -16,7 +16,9 @@ This Terraform stack assumes and needs the following:
 
 - You have an IP range that you want to whitelist. This can be your home or office IP address. This IP range will be able to access the webserver's public port 80 as well as Kibana dashboard endpoint. 
 
-Once the above pre-requisites are completed, the Terraform scripts can be run:
+Once the above pre-requisites are completed, create a " terraform.tfvars`" file and assign the appropriate values. Refer to the comments in "`variables.tf`" and "`terraform.tfvars.example`" files for a guide and example of how to correctly write this configuration.
+
+Subsequently, Terraform scripts can be run:
 
 ```
 PS D:\Project\flow-logs-visualization> terraform init
