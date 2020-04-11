@@ -1,0 +1,23 @@
+account_id = "123412341234"
+selected_region = "ap-southeast-1"
+selected_vpc_id = "vpc-12345678"
+selected_subnet_id = "subnet-12345678"
+selected_keypair = "keypair-ap-southeast-1"
+
+vpc_flow_log_appender_cfn_stack = "vpc-flow-log-appender"
+
+es_domain_name = "es-flowlogs"
+es_version = "5.6"
+es_instance_type = "r4.large.elasticsearch"
+es_instance_count = 1
+kinesis_region_cidr = "13.228.64.192/27" # Singapore region's Kinesis endpoints
+es_ebs_enabled = true
+es_ebs_volume_type = "gp2"
+es_ebs_volume_size = 50
+
+s3_kinesis_backup_bucket_name = "123412341234-kinesis-vpcflowlogtoelasticsearch"
+
+webserver_instance_count = 1
+whitelist_cidr = "12.23.34.45/32"
+instance_ami = "ami-0cbc6aae997c6538a" # Amazon Linux AMI in Singapore region
+instance_type = "t2.micro"
